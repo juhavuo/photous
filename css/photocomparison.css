@@ -1,0 +1,48 @@
+li{
+    font-size: 1em;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+header {
+    display: block;
+    width: 100%;
+}
+main {
+    display: block;
+    width: 50%;
+    background-color: #665544;
+}
+
+aside {
+    display: block;
+    width: 50%;
+    background-color: #445566;
+}
+
+img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+}
+
+@media only screen and (max-width: 1200px){
+    main{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    img{
+        width: 100%;
+    }
+}

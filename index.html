@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UFT=8">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>I'm scaling my photos</title>
+    </head>
+    <body>
+        <header>
+            <h1>For Metropolia course Web based mobile application</h1>
+            <ul>
+                <li>Main page</li>
+                <li><a href="jpgpage.html">jpg and webp extension </a></li>
+                <li><a href="vectorimage.html">Vectorimage</a></li>
+                <li><a href="informative.html">Informative stuff</a></li>
+            </ul>
+        </header>
+        <main>
+            <p>Photo I've taken somewhere from Viikinmäki in Helsinki</p>
+            <img src="photos/viikinmakismall.png" srcset="photos/viikinmakismall.png 420w, photos/viikinmakimedium.png 600w, photos/viikinmakilarge.png 1200w">
+            <p>Different settings, same photos</p>
+            <picture>
+                <source srcset="photos/viikinmakilarge.png" media="(min-width:600px)">
+                <source srcset="photos/viikinmakimedium.png" media="(min-width:412px)">
+                <img src="photos/viikinmakismall.png">
+            </picture>
+            <p>The same photo as flashy gif</p>
+            <img src="photos/viikinmakimediumgifi.gif" id="scalable">
+            <p>Note: modifications made in GIMP</p>
+        </main>
+    </body>
+</html>
+
+<img src="../../AppData/Local/Temp/b4q38nmk.bmp"/>
